@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="titulo">
+    <h1>
+        COTIZADOR DE SEGURO
+    </h1>
+  </div>
+  <div class="imagenes">
+
+    <div class="fondomoto">
+        <img class="auto" src="https://img.freepik.com/iconos-gratis/coche-estuche-negro-sobre-ruedas_318-42951.jpg"></div>
+        <img class="moto" src="https://static.vecteezy.com/system/resources/previews/006/476/250/non_2x/motorcycle-silhouette-design-free-vector.jpg">
+    </div> 
+  
+  <div class="vehiculos">
+    <div class="tituloauto">
+        <button class="botonAuto" id="botAut">Seguro de Auto</button>
+    </div>
+    <div class="titulomoto">
+      <button class="botonMoto" id="botMot">Seguro de Moto</button>
+    </div>
+  </div>
+
+  <div class="ventanaMoto" id="ventMot">
+    <button class ="cierreMoto"id="cerrarMoto">X</button>
+    <h2 class="titulosVehiculos">SEGUROS MOTOS</h2>
+      <div class="formulario">
+        <form>
+            <div class="campo"> 
+              <label>Marca:</label>
+              <select name="marca" id="marcaMoto">
+                <option value="">-- Seleccione la marca de su vehiculo --</option>
+                <option value="yamaha">Yamaha</option>
+                <option value="honda">Honda</option>
+                <option value="bajaj">Bajaj</option>
+              </select>
+            </div>
+            <hr>
+            <div class="campo">
+              <label>Año:</label>
+              
+              <select name="anio" id="anioMoto">
+                <option value="">-- Seleccione el año --</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+              </select>
+            </div>
+            <hr>
+            <div class="campo">
+              <label for="plan">Seleccione un plan:</label>
+              <select name="plan" id="planMoto">
+                <option value="">-- Seleccione un plan --</option>
+                <option value="plata">Plata</option>
+                <option value="oro">Oro</option>
+                <option value="oplatino">Platino</option>
+              </select>
+            </div>
+
+            <input id="botonCotizarMoto" type="button" class="botonCotizador" value="Cotizar">
+        </form>
+
+      </div>
+      <div id="resumenMoto" class="classresumen">HOLA SOY EL RESUMEN</div>
+      <div id="resultadoMoto" class="classresultado">HOLA SOY EL RESULTADO</div>
+  </div>
+
+  <div class="ventanaAuto" id="ventAut">
+    <button id="cerrarAuto" class="cierreAuto">X</button>
+    <h2 class="titulosVehiculos">SEGUROS AUTOS</h2>
+    <div class="formulario">
+      <form>
+          <div class="campo"> 
+            <label>Marca</label>
+            <select name="marca" id="marcaAuto">
+              <option value="">-- Seleccione la marca de su vehiculo --</option>
+              <option value="chebrolet">Chevrolet</option>
+              <option value="ford">Ford</option>
+              <option value="renault">Renault</option>
+            </select>
+          </div>
+          <hr>
+          <div class="campo">
+            <label>Año</label>
+            <select name="anio" id="anioAuto">
+              <option value="">-- Seleccione el año --</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+            </select>
+          </div>
+          <hr>
+          <div class="campo">
+            <label for="plan">Seleccione su plan</label>
+            <select name="plan" id="planAuto">
+              <option value="">-- Seleccione un plan --</option>
+              <option value="plata">Plata</option>
+              <option value="oro">Oro</option>
+              <option value="oplatino">Platino</option>
+            </select>
+          </div>
+
+          <input id="botonCotizarAuto" type="button" class="botonCotizador" value="Cotizar">
+      </form>
+      <div id="resumenAuto" class="classresumen">HOLA SOY EL RESUMEN </div>
+    <div id="resultadoAuto" class="classresultado">HOLA SOY EL RESULTADO</div>
+    </div> 
+  </div>
+
+  <script src="terceraEntrega.js"></script>  
+  <footer>
+    <p class="pie">Este seguro no se hace responsable de que su vehiculo no este bien asegurado. (Tampoco tenemos grua.)</p>
+  </footer>
+</body>
+</html>
